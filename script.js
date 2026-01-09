@@ -159,7 +159,7 @@ function performSearch(query) {
     const results = [];
     
     // Search through all pages
-    const pages = ['index', 'schedule', 'members', 'committees', 'legislation', 'voting', 'records', 'budget', 'treaties', 'petition'];
+    const pages = ['index', 'schedule', 'members', 'legislation', 'voting', 'records', 'budget', 'treaties', 'petition'];
     
     pages.forEach(page => {
         const pageContent = document.querySelectorAll(`[data-page="${page}"]`);
