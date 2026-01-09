@@ -3,7 +3,7 @@ const translations = {
     ja: {
         nav_schedule: "会議日程",
         nav_members: "議員一覧",
-        nav_committees: "委員会",
+        nav_committees: "委員会_REWORK",
         nav_legislation: "法律",
         nav_voting: "表決",
         nav_records: "議事録",
@@ -39,7 +39,7 @@ const translations = {
     en: {
         nav_schedule: "Schedule",
         nav_members: "Members",
-        nav_committees: "Committees",
+        nav_committees: "Committees_REWORK",
         nav_legislation: "Legislation",
         nav_voting: "Voting",
         nav_records: "Records",
