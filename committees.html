@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>委員会 - Committees | National Diet of Japan</title>
+    <link rel="stylesheet" href="style.css">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Emblem_of_Japan.svg/100px-Emblem_of_Japan.svg.png" alt="日本の紋章">
+                    <h1>日本国会</h1>
+                    <span class="subtitle">National Diet of Japan</span>
+                </div>
+                <div class="header-controls">
+                    <div class="language-switcher">
+                        <button id="lang-ja" class="lang-btn active" onclick="setLanguage('ja')">日本語</button>
+                        <button id="lang-en" class="lang-btn" onclick="setLanguage('en')">English</button>
+                    </div>
+                    <button class="search-btn" onclick="window.location.href='search.html'">
+                        <span class="search-icon">🔍</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="schedule.html" data-i18n="nav_schedule">Schedule</a></li>
+                <li><a href="members.html" data-i18n="nav_members">Members</a></li>
+                <li><a href="committees.html" data-i18n="nav_committees">Committees</a></li>
+                <li><a href="legislation.html" data-i18n="nav_legislation">Legislation</a></li>
+                <li><a href="voting.html" data-i18n="nav_voting">Voting</a></li>
+                <li><a href="records.html" data-i18n="nav_records">Records</a></li>
+                <li><a href="budget.html" data-i18n="nav_budget">Budget</a></li>
+                <li><a href="treaties.html" data-i18n="nav_treaties">Treaties</a></li>
+                <li><a href="petition.html" data-i18n="nav_petition">Petition</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <div class="container">
+            <h1 data-i18n="committees_title">委員会</h1>
+            <p>常任委員会・特別委員会 | Standing & Special Committees</p>
+        </div>
+    </section>
+
+    <!-- Committees Content -->
+    <section class="content-section">
+        <div class="container">
+            <!-- Standing Committees -->
+            <div class="committees-section">
+                <h2>常任委員会 | Standing Committees</h2>
+                <p class="section-description">各議院に17の常任委員会が設置されています</p>
+                <div class="committees-grid">
+                    <div class="committee-card">
+                        <h3>内閣委員会</h3>
+                        <p>Cabinet Committee</p>
+                        <div class="committee-info">
+                            <span>委員長: 山田 一郎</span>
+                            <span>委員数: 45名</span>
+                        </div>
+                    </div>
+                    <div class="committee-card">
+                        <h3>総務委員会</h3>
+                        <p>General Affairs Committee</p>
+                        <div class="committee-info">
+                            <span>委員長: 佐藤 花子</span>
+                            <span>委員数: 40名</span>
+                        </div>
+                    </div>
+                    <div class="committee-card">
+                        <h3>法務委員会</h3>
+                        <p>Justice Committee</p>
+                        <div class="committee-info">
+                            <span>委員長: 田中 健一</span>
+                            <span>委員数: 35名</span>
+                        </div>
+                    </div>
+                    <div class="committee-card">
+                        <h3>外務委員会</h3>
+                        <p>Foreign Affairs Committee</p>
+                        <div class="committee-info">
+                            <span>委員長: 鈴木 美咲</span>
+                            <span>委員数: 30名</span>
+                        </div>
+                    </div>
+                    <div class="committee-card">
+                        <h3>財政金融委員会</h3>
+                        <p>Finance Committee</p>
+                        <div class="committee-info">
+                            <span>委員長: 高橋 健太</span>
+                            <span>委員数: 45名</span>
+                        </div>
+                    </div>
+                    <div class="committee-card">
+                        <h3>文部科学委員会</h3>
+                        <p>Education, Culture, Sports, Science and Technology Committee</p>
+                        <div class="committee-info">
+                            <span>委員長: 伊藤 真由美</span>
+                            <span>委員数: 40名</span>
+                        </div>
+                    </div>
+                    <div class="committee-card">
+                        <h3>厚生労働委員会</h3>
+                        <p>Health, Labour and Welfare Committee</p>
+                        <div class="committee-info">
+                            <span>委員長: 渡辺 隆</span>
+                            <span>委員数: 45名</span>
+                        </div>
+                    </div>
+                    <div class="committee-card">
+                        <h3>農林水産委員会</h3>
+                        <p>Agriculture, Forestry and Fisheries Committee</p>
+                        <div class="committee-info">
+                            <span>委員長: 中村 恵</span>
+                            <span>委員数: 40名</span>
+                        </div>
+                    </div>
+                    <div class="committee-card">
+                        <h3>経済産業委員会</h3>
+                        <p>Economy, Trade and Industry Committee</p>
+                        <div class="committee-info">
+                            <span>委員長: 小林 一郎</span>
+                            <span>委員数: 45名</span>
+                        </div>
+                    </div>
+                    <div class="committee-card">
+                        <h3>国土交通委員会</h3>
+                        <p>Land, Infrastructure, Transport and Tourism Committee</p>
+                        <div class="committee-info">
+                            <span>委員長: 加藤 由美</span>
+                            <span>委員数: 50名</span>
+                        </div>
+                    </div>
+                    <div class="committee-card">
+                        <h3>環境委員会</h3>
+                        <p>Environment Committee</p>
+                        <div class="committee-info">
+                            <span>委員長: 山田 和夫</span>
+                            <span>委員数: 35名</span>
+                        </div>
+                    </div>
+                    <div class="committee-card">
+                        <h3>安全保障委員会</h3>
+                        <p>Security Committee</p>
+                        <div class="committee-info">
+                            <span>委員長: 佐々木 真紀</span>
+                            <span>委員数: 40名</span>
+                        </div>
+                    </div>
+                    <div class="committee-card">
+                        <h3>国家基本政策委員会</h3>
+                        <p>Fundamental National Policy Committee</p>
+                        <div class="committee-info">
+                            <span>委員長: 松本 浩</span>
+                            <span>委員数: 45名</span>
+                        </div>
+                    </div>
+                    <div class="committee-card">
+                        <h3>予算委員会</h3>
+                        <p>Budget Committee</p>
+                        <div class="committee-info">
+                            <span>委員長: 近藤 明子</span>
+                            <span>委員数: 50名</span>
+                        </div>
+                    </div>
+                    <div class="committee-card">
+                        <h3>決算行政監視委員会</h3>
+                        <p>Audit Committee</p>
+                        <div class="committee-info">
+                            <span>委員長: 斉藤 隆</span>
+                            <span>委員数: 40名</span>
+                        </div>
+                    </div>
+                    <div class="committee-card">
+                        <h3>議院運営委員会</h3>
+                        <p>House Steering Committee</p>
+                        <div class="committee-info">
+                            <span>委員長: 森田 洋子</span>
+                            <span>委員数: 25名</span>
+                        </div>
+                    </div>
+                    <div class="committee-card">
+                        <h3>懲罰委員会</h3>
+                        <p>Discipline Committee</p>
+                        <div class="committee-info">
+                            <span>委員長: 藤田 健</span>
+                            <span>委員数: 20名</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Committees -->
+            <div class="committees-section">
+                <h2>特別委員会 | Special Committees</h2>
+                <p class="section-description">現在8つの特別委員会が活動中です</p>
+                <div class="committees-grid">
+                    <div class="committee-card special">
+                        <h3>災害対策特別委員会</h3>
+                        <p>Special Committee on Disaster Management</p>
+                        <div class="committee-info">
+                            <span>委員長: 岡本 真一</span>
+                            <span>委員数: 45名</span>
+                        </div>
+                    </div>
+                    <div class="committee-card special">
+                        <h3>沖縄及び北方問題に関する特別委員会</h3>
+                        <p>Special Committee on Okinawa and Northern Territories</p>
+                        <div class="committee-info">
+                            <span>委員長: 中西 美智子</span>
+                            <span>委員数: 35名</span>
+                        </div>
+                    </div>
+                    <div class="committee-card special">
+                        <h3>科学技術・イノベーション特別委員会</h3>
+                        <p>Special Committee on Science and Technology</p>
+                        <div class="committee-info">
+                            <span>委員長: 浜田 誠</span>
+                            <span>委員数: 40名</span>
+                        </div>
+                    </div>
+                    <div class="committee-card special">
+                        <h3>北朝鮮による拉致問題等に関する特別委員会</h3>
+                        <p>Special Committee on North Korean Abduction</p>
+                        <div class="committee-info">
+                            <span>委員長: 石井 陽子</span>
+                            <span>委員数: 35名</span>
+                        </div>
+                    </div>
+                    <div class="committee-card special">
+                        <h3>地方創生に関する特別委員会</h3>
+                        <p>Special Committee on Regional Revitalization</p>
+                        <div class="committee-info">
+                            <span>委員長: 大野 茂</span>
+                            <span>委員数: 40名</span>
+                        </div>
+                    </div>
+                    <div class="committee-card special">
+                        <h3>少子高齢化社会対策特別委員会</h3>
+                        <p>Special Committee on Aging Society</p>
+                        <div class="committee-info">
+                            <span>委員長: 吉川 和子</span>
+                            <span>委員数: 45名</span>
+                        </div>
+                    </div>
+                    <div class="committee-card special">
+                        <h3>原子力問題調査特別委員会</h3>
+                        <p>Special Committee on Nuclear Power</p>
+                        <div class="committee-info">
+                            <span>委員長: 星野 正</span>
+                            <span>委員数: 30名</span>
+                        </div>
+                    </div>
+                    <div class="committee-card special">
+                        <h3>デジタル社会推進特別委員会</h3>
+                        <p>Special Committee on Digital Society</p>
+                        <div class="committee-info">
+                            <span>委員長: 森口 友美</span>
+                            <span>委員数: 35名</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Committee Activities -->
+            <div class="committee-activities">
+                <h2>委員会活動 | Committee Activities</h2>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-date">2025.01.15</div>
+                        <div class="activity-content">
+                            <h3>予算委員会</h3>
+                            <p>令和7年度予算案の審議を開始</p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-date">2025.01.14</div>
+                        <div class="activity-content">
+                            <h3>法務委員会</h3>
+                            <p>刑法改正案の専門員調査</p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-date">2025.01.13</div>
+                        <div class="activity-content">
+                            <h3>外務委員会</h3>
+                            <p>外交政策に関する参考人聴取</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>日本国会</h3>
+                    <p>〒100-0014 東京都千代田区永田町1-7-1</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 National Diet of Japan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

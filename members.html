@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>議員一覧 - Members | National Diet of Japan</title>
+    <link rel="stylesheet" href="style.css">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Emblem_of_Japan.svg/100px-Emblem_of_Japan.svg.png" alt="日本の紋章">
+                    <h1>日本国会</h1>
+                    <span class="subtitle">National Diet of Japan</span>
+                </div>
+                <div class="header-controls">
+                    <div class="language-switcher">
+                        <button id="lang-ja" class="lang-btn active" onclick="setLanguage('ja')">日本語</button>
+                        <button id="lang-en" class="lang-btn" onclick="setLanguage('en')">English</button>
+                    </div>
+                    <button class="search-btn" onclick="window.location.href='search.html'">
+                        <span class="search-icon">🔍</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="schedule.html" data-i18n="nav_schedule">Schedule</a></li>
+                <li><a href="members.html" data-i18n="nav_members">Members</a></li>
+                <li><a href="committees.html" data-i18n="nav_committees">Committees</a></li>
+                <li><a href="legislation.html" data-i18n="nav_legislation">Legislation</a></li>
+                <li><a href="voting.html" data-i18n="nav_voting">Voting</a></li>
+                <li><a href="records.html" data-i18n="nav_records">Records</a></li>
+                <li><a href="budget.html" data-i18n="nav_budget">Budget</a></li>
+                <li><a href="treaties.html" data-i18n="nav_treaties">Treaties</a></li>
+                <li><a href="petition.html" data-i18n="nav_petition">Petition</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <div class="container">
+            <h1 data-i18n="members_title">議員一覧</h1>
+            <p>国会議員名簿 | Diet Members Directory</p>
+        </div>
+    </section>
+
+    <!-- Members Content -->
+    <section class="content-section">
+        <div class="container">
+            <div class="members-stats">
+                <div class="stat-card">
+                    <div class="stat-number">10</div>
+                    <div class="stat-label">衆議院議員<br>House of Representatives</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">11</div>
+                    <div class="stat-label">参議院議員<br>House of Councillors</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">21</div>
+                    <div class="stat-label">総議員数<br>Total Members</div>
+                </div>
+            </div>
+
+            <!-- House of Representatives -->
+            <div class="house-section">
+                <h2>衆議院議員 | House of Representatives</h2>
+                <div class="members-table-wrapper">
+                    <table class="members-table">
+                        <thead>
+                            <tr>
+                                <th>氏名 | Name</th>
+                                <th>選挙区 | District</th>
+                                <th>党派 | Party</th>
+                                <th>当選回数 | Terms</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>田中 健一</td>
+                                <td>北海道1区 | Hokkaido Dist. 1</td>
+                                <td>統一戦線</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>山本 花子</td>
+                                <td>東京都1区 | Tokyo Dist. 1</td>
+                                <td>統一戦線</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>佐藤 太郎</td>
+                                <td>愛知県1区 | Aichi Dist. 1</td>
+                                <td>日本社会主義労働者党</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>鈴木 美咲</td>
+                                <td>大阪府1区 | Osaka Dist. 1</td>
+                                <td>日本社会主義労働者党</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>高橋 健太</td>
+                                <td>福岡県1区 | Fukuoka Dist. 1</td>
+                                <td>日本社会主義労働者党</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>伊藤 真由美</td>
+                                <td>比例北海道 | PR Hokkaido</td>
+                                <td>日本社会主義労働者党</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>渡辺 隆</td>
+                                <td>比例近畿 | PR Kinki</td>
+                                <td>日本社会主義労働者党</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>中村 恵</td>
+                                <td>比例東北 | PR Tohoku</td>
+                                <td>日本社会主義労働者党</td>
+                                <td>2</td>
+                            </tr>
+							<tr>
+                                <td>伊藤 真由美</td>
+                                <td>比例北海道 | PR Hokkaido</td>
+                                <td>日本社会主義労働者党</td>
+                                <td>1</td>
+                            </tr>
+							<tr>
+                                <td>伊藤 真由美</td>
+                                <td>比例北海道 | PR Hokkaido</td>
+                                <td>日本社会主義労働者党</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- House of Councillors -->
+            <div class="house-section">
+                <h2>参議院議員 | House of Councillors</h2>
+                <div class="members-table-wrapper">
+                    <table class="members-table">
+                        <thead>
+                            <tr>
+                                <th>氏名 | Name</th>
+                                <th>選挙区 | District</th>
+                                <th>党派 | Party</th>
+                                <th>任期 | Term</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>小林 一郎</td>
+                                <td>北海道選挙区 | Hokkaido</td>
+                                <td>統一戦線</td>
+                                <td>2040年</td>
+                            </tr>
+                            <tr>
+                                <td>加藤 由美</td>
+                                <td>東京都選挙区 | Tokyo</td>
+                                <td>統一戦線</td>
+                                <td>2040年</td>
+                            </tr>
+                            <tr>
+                                <td>山田 和夫</td>
+                                <td>愛知県選挙区 | Aichi</td>
+                                <td>統一戦線</td>
+                                <td>2040年</td>
+                            </tr>
+                            <tr>
+                                <td>佐々木 真紀</td>
+                                <td>大阪府選挙区 | Osaka</td>
+                                <td>統一戦線</td>
+                                <td>2040年</td>
+                            </tr>
+                            <tr>
+                                <td>松本 浩</td>
+                                <td>比例区 | Proportional</td>
+                                <td>日本社会主義労働者党</td>
+                                <td>2040年</td>
+                            </tr>
+                             <tr>
+                                <td>佐々木 真紀</td>
+                                <td>大阪府選挙区 | Osaka</td>
+                                <td>日本社会主義労働者党</td>
+                                <td>2040年</td>
+                            </tr>
+                             <tr>
+                                <td>佐々木 真紀</td>
+                                <td>大阪府選挙区 | Osaka</td>
+                                <td>日本社会主義労働者党</td>
+                                <td>2040年</td>
+                            </tr>
+							 <tr>
+                                <td>佐々木 真紀</td>
+                                <td>大阪府選挙区 | Osaka</td>
+                                <td>日本社会主義労働者党</td>
+                                <td>2040年</td>
+                            </tr>
+					         <tr>
+                                <td>佐々木 真紀</td>
+                                <td>大阪府選挙区 | Osaka</td>
+                                <td>日本社会主義労働者党</td>
+                                <td>2040年</td>
+                            </tr>
+					         <tr>
+                                <td>佐々木 真紀</td>
+                                <td>大阪府選挙区 | Osaka</td>
+                                <td>日本社会主義労働者党</td>
+                                <td>2040年</td>
+                            </tr>
+							       <tr>
+                                <td>佐々木 真紀</td>
+                                <td>大阪府選挙区 | Osaka</td>
+                                <td>日本社会主義労働者党</td>
+                                <td>2040年</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Political Parties -->
+            <div class="parties-section">
+                <h2>政党・会派 | Political Parties</h2>
+                <div class="parties-grid">
+                    <div class="party-card">
+                        <h3>統一戦線</h3>
+                        <p>United Front</p>
+                        <div class="party-stats">
+                            <span>衆議院: 2席</span>
+                            <span>参議院: 4席</span>
+                        </div>
+                    </div>
+                    <div class="party-card">
+                        <h3>日本社会主義労働者党</h3>
+                        <p>Japanese Socialist Workers Party</p>
+                        <div class="party-stats">
+                            <span>衆議院: 8席</span>
+                            <span>参議院: 7席</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>日本国会</h3>
+                    <p>〒100-0014 東京都千代田区永田町1-7-1</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 National Diet of Japan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

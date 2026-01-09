@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>議事録 - Records | National Diet of Japan</title>
+    <link rel="stylesheet" href="style.css">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Emblem_of_Japan.svg/100px-Emblem_of_Japan.svg.png" alt="日本の紋章">
+                    <h1>日本国会</h1>
+                    <span class="subtitle">National Diet of Japan</span>
+                </div>
+                <div class="header-controls">
+                    <div class="language-switcher">
+                        <button id="lang-ja" class="lang-btn active" onclick="setLanguage('ja')">日本語</button>
+                        <button id="lang-en" class="lang-btn" onclick="setLanguage('en')">English</button>
+                    </div>
+                    <button class="search-btn" onclick="window.location.href='search.html'">
+                        <span class="search-icon">🔍</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="schedule.html" data-i18n="nav_schedule">Schedule</a></li>
+                <li><a href="members.html" data-i18n="nav_members">Members</a></li>
+                <li><a href="committees.html" data-i18n="nav_committees">Committees</a></li>
+                <li><a href="legislation.html" data-i18n="nav_legislation">Legislation</a></li>
+                <li><a href="voting.html" data-i18n="nav_voting">Voting</a></li>
+                <li><a href="records.html" data-i18n="nav_records">Records</a></li>
+                <li><a href="budget.html" data-i18n="nav_budget">Budget</a></li>
+                <li><a href="treaties.html" data-i18n="nav_treaties">Treaties</a></li>
+                <li><a href="petition.html" data-i18n="nav_petition">Petition</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <div class="container">
+            <h1 data-i18n="records_title">議事録</h1>
+            <p>会議記録・議事録 | Meeting Records and Transcripts</p>
+        </div>
+    </section>
+
+    <!-- Records Content -->
+    <section class="content-section">
+        <div class="container">
+            <!-- Records Stats -->
+            <div class="records-stats">
+                <div class="stat-card">
+                    <div class="stat-number">1,245</div>
+                    <div class="stat-label">総記録数<br>Total Records</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">156</div>
+                    <div class="stat-label">本会議記録<br>Plenary Sessions</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">892</div>
+                    <div class="stat-label">委員会記録<br>Committee Records</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">197</div>
+                    <div class="stat-label">公聴会記録<br>Public Hearings</div>
+                </div>
+            </div>
+
+            <!-- Recent Records -->
+            <div class="records-section">
+                <h2>最近の記録 | Recent Records</h2>
+                <div class="records-list">
+                    <div class="record-item">
+                        <div class="record-date">2025.01.15</div>
+                        <div class="record-type">本会議</div>
+                        <div class="record-info">
+                            <h3>第213回国会 衆議院本会議 第1日目</h3>
+                            <p>開会式・総理演説・代表質問</p>
+                        </div>
+                        <div class="record-actions">
+                            <button class="btn btn-sm">PDFで見る</button>
+                            <button class="btn btn-sm">動画で見る</button>
+                        </div>
+                    </div>
+                    <div class="record-item">
+                        <div class="record-date">2025.01.15</div>
+                        <div class="record-type">委員会</div>
+                        <div class="record-info">
+                            <h3>予算委員会 第1回会合</h3>
+                            <p>令和7年度予算案の審議</p>
+                        </div>
+                        <div class="record-actions">
+                            <button class="btn btn-sm">PDFで見る</button>
+                            <button class="btn btn-sm">動画で見る</button>
+                        </div>
+                    </div>
+                    <div class="record-item">
+                        <div class="record-date">2025.01.14</div>
+                        <div class="record-type">本会議</div>
+                        <div class="record-info">
+                            <h3>第213回国会 参議院本会議 第1日目</h3>
+                            <p>開会式・議長演説・代表質問</p>
+                        </div>
+                        <div class="record-actions">
+                            <button class="btn btn-sm">PDFで見る</button>
+                            <button class="btn btn-sm">動画で見る</button>
+                        </div>
+                    </div>
+                    <div class="record-item">
+                        <div class="record-date">2025.01.14</div>
+                        <div class="record-type">委員会</div>
+                        <div class="record-info">
+                            <h3>法務委員会 第1回会合</h3>
+                            <p>刑法一部改正案の審議</p>
+                        </div>
+                        <div class="record-actions">
+                            <button class="btn btn-sm">PDFで見る</button>
+                            <button class="btn btn-sm">動画で見る</button>
+                        </div>
+                    </div>
+                    <div class="record-item">
+                        <div class="record-date">2025.01.13</div>
+                        <div class="record-type">公聴会</div>
+                        <div class="record-info">
+                            <h3>外務委員会 公聴会</h3>
+                            <p>外交政策に関する専門家ヒアリング</p>
+                        </div>
+                        <div class="record-actions">
+                            <button class="btn btn-sm">PDFで見る</button>
+                            <button class="btn btn-sm">動画で見る</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Records -->
+            <div class="search-records">
+                <h2>議事録検索 | Record Search</h2>
+                <form class="search-form">
+                    <div class="form-group">
+                        <label>キーワード | Keyword</label>
+                        <input type="text" placeholder="キーワードを入力してください">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>開始日 | Start Date</label>
+                            <input type="date">
+                        </div>
+                        <div class="form-group">
+                            <label>終了日 | End Date</label>
+                            <input type="date">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>議院 | House</label>
+                        <select>
+                            <option>すべて | All</option>
+                            <option>衆議院 | House of Representatives</option>
+                            <option>参議院 | House of Councillors</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>種類 | Type</label>
+                        <select>
+                            <option>すべて | All</option>
+                            <option>本会議 | Plenary Session</option>
+                            <option>委員会 | Committee</option>
+                            <option>公聴会 | Public Hearing</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">検索 | Search</button>
+                </form>
+            </div>
+
+            <!-- Archives -->
+            <div class="archives-section">
+                <h2>過去の国会記録 | Past Diet Sessions</h2>
+                <div class="archives-grid">
+                    <div class="archive-card">
+                        <h3>第212回国会</h3>
+                        <p>令和6年10月 - 令和6年12月</p>
+                        <span class="archive-count">記録数: 892</span>
+                    </div>
+                    <div class="archive-card">
+                        <h3>第211回国会</h3>
+                        <p>令和6年1月 - 令和6年6月</p>
+                        <span class="archive-count">記録数: 1,056</span>
+                    </div>
+                    <div class="archive-card">
+                        <h3>第210回国会</h3>
+                        <p>令和5年10月 - 令和5年12月</p>
+                        <span class="archive-count">記録数: 756</span>
+                    </div>
+                    <div class="archive-card">
+                        <h3>第209回国会</h3>
+                        <p>令和5年1月 - 令和5年6月</p>
+                        <span class="archive-count">記録数: 1,102</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>日本国会</h3>
+                    <p>〒100-0014 東京都千代田区永田町1-7-1</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 National Diet of Japan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

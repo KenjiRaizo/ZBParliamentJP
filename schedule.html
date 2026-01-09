@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会議日程 - Schedule | National Diet of Japan</title>
+    <link rel="stylesheet" href="style.css">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Emblem_of_Japan.svg/100px-Emblem_of_Japan.svg.png" alt="日本の紋章">
+                    <h1>日本国会</h1>
+                    <span class="subtitle">National Diet of Japan</span>
+                </div>
+                <div class="header-controls">
+                    <div class="language-switcher">
+                        <button id="lang-ja" class="lang-btn active" onclick="setLanguage('ja')">日本語</button>
+                        <button id="lang-en" class="lang-btn" onclick="setLanguage('en')">English</button>
+                    </div>
+                    <button class="search-btn" onclick="window.location.href='search.html'">
+                        <span class="search-icon">🔍</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="schedule.html" data-i18n="nav_schedule">Schedule</a></li>
+                <li><a href="members.html" data-i18n="nav_members">Members</a></li>
+                <li><a href="committees.html" data-i18n="nav_committees">Committees</a></li>
+                <li><a href="legislation.html" data-i18n="nav_legislation">Legislation</a></li>
+                <li><a href="voting.html" data-i18n="nav_voting">Voting</a></li>
+                <li><a href="records.html" data-i18n="nav_records">Records</a></li>
+                <li><a href="budget.html" data-i18n="nav_budget">Budget</a></li>
+                <li><a href="treaties.html" data-i18n="nav_treaties">Treaties</a></li>
+                <li><a href="petition.html" data-i18n="nav_petition">Petition</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <div class="container">
+            <h1 data-i18n="schedule_title">会議日程</h1>
+            <p data-i18n="schedule_subtitle">第213回国会の会議日程</p>
+        </div>
+    </section>
+
+    <!-- Schedule Content -->
+    <section class="content-section">
+        <div class="container">
+            <div class="schedule-calendar">
+                <div class="calendar-month">
+                    <h2>令和7年1月 (January 2025)</h2>
+                    <div class="calendar-grid">
+                        <div class="calendar-day">
+                            <div class="date">1月15日 (Jan 15)</div>
+                            <div class="events">
+                                <div class="event plenary">衆議院本会議 - Plenary Session</div>
+                                <div class="event committee">予算委員会 - Budget Committee</div>
+                            </div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="date">1月16日 (Jan 16)</div>
+                            <div class="events">
+                                <div class="event plenary">参議院本会議 - Plenary Session</div>
+                                <div class="event committee">法務委員会 - Justice Committee</div>
+                            </div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="date">1月17日 (Jan 17)</div>
+                            <div class="events">
+                                <div class="event plenary">衆議院本会議 - Plenary Session</div>
+                                <div class="event committee">内閣委員会 - Cabinet Committee</div>
+                            </div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="date">1月20日 (Jan 20)</div>
+                            <div class="events">
+                                <div class="event committee">決算行政監視委員会 - Audit Committee</div>
+                            </div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="date">1月21日 (Jan 21)</div>
+                            <div class="events">
+                                <div class="event plenary">参議院本会議 - Plenary Session</div>
+                                <div class="event committee">財政金融委員会 - Finance Committee</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calendar-month">
+                    <h2>令和7年2月 (February 2025)</h2>
+                    <div class="calendar-grid">
+                        <div class="calendar-day">
+                            <div class="date">2月3日 (Feb 3)</div>
+                            <div class="events">
+                                <div class="event plenary">衆議院本会議 - Plenary Session</div>
+                            </div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="date">2月4日 (Feb 4)</div>
+                            <div class="events">
+                                <div class="event committee">外務委員会 - Foreign Affairs Committee</div>
+                                <div class="event committee">安全保障委員会 - Security Committee</div>
+                            </div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="date">2月5日 (Feb 5)</div>
+                            <div class="events">
+                                <div class="event plenary">参議院本会議 - Plenary Session</div>
+                            </div>
+                        </div>
+                        <div class="calendar-day">
+                            <div class="date">2月6日 (Feb 6)</div>
+                            <div class="events">
+                                <div class="event committee">環境委員会 - Environment Committee</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Meetings -->
+            <div class="upcoming-meetings">
+                <h2>今後の会議 | Upcoming Meetings</h2>
+                <div class="meeting-list">
+                    <div class="meeting-item">
+                        <div class="meeting-date">
+                            <div class="day">15</div>
+                            <div class="month">1月</div>
+                            <div class="time">10:00</div>
+                        </div>
+                        <div class="meeting-info">
+                            <h3>衆議院本会議 | House of Representatives Plenary Session</h3>
+                            <p>予算審議 | Budget Deliberation</p>
+                            <span class="location">衆議院本会議場 | House Chamber</span>
+                        </div>
+                    </div>
+                    <div class="meeting-item">
+                        <div class="meeting-date">
+                            <div class="day">16</div>
+                            <div class="month">1月</div>
+                            <div class="time">14:00</div>
+                        </div>
+                        <div class="meeting-info">
+                            <h3>予算委員会 | Budget Committee</h3>
+                            <p>令和7年度予算案審議 | FY2025 Budget Bill Deliberation</p>
+                            <span class="location">委員会室 | Committee Room</span>
+                        </div>
+                    </div>
+                    <div class="meeting-item">
+                        <div class="meeting-date">
+                            <div class="day">17</div>
+                            <div class="month">1月</div>
+                            <div class="time">10:00</div>
+                        </div>
+                        <div class="meeting-info">
+                            <h3>法務委員会 | Justice Committee</h3>
+                            <p>刑法改正案審議 | Penal Code Amendment Deliberation</p>
+                            <span class="location">第1委員会室 | Committee Room 1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>日本国会</h3>
+                    <p>〒100-0014 東京都千代田区永田町1-7-1</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 National Diet of Japan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

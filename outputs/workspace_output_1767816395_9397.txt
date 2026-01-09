@@ -1,0 +1,8 @@
+total 36
+drwxr-xr-x 3 root root   112 Jan  7 20:02 .
+drwxr-xr-x 1 root root   177 Jan  7 19:53 ..
+-rw-r--r-- 1 root root 13753 Jan  7 19:59 index.html
+drwxr-xr-x 2 root root   154 Jan  7 20:06 outputs
+-rw-r--r-- 1 root root  8025 Jan  7 20:00 script.js
+-rw-r--r-- 1 root root  6496 Jan  7 19:57 style.css
+-rw-r--r-- 1 root root   870 Jan  7 20:01 todo.md

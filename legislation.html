@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>法律 - Legislation | National Diet of Japan</title>
+    <link rel="stylesheet" href="style.css">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Emblem_of_Japan.svg/100px-Emblem_of_Japan.svg.png" alt="日本の紋章">
+                    <h1>日本国会</h1>
+                    <span class="subtitle">National Diet of Japan</span>
+                </div>
+                <div class="header-controls">
+                    <div class="language-switcher">
+                        <button id="lang-ja" class="lang-btn active" onclick="setLanguage('ja')">日本語</button>
+                        <button id="lang-en" class="lang-btn" onclick="setLanguage('en')">English</button>
+                    </div>
+                    <button class="search-btn" onclick="window.location.href='search.html'">
+                        <span class="search-icon">🔍</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="schedule.html" data-i18n="nav_schedule">Schedule</a></li>
+                <li><a href="members.html" data-i18n="nav_members">Members</a></li>
+                <li><a href="committees.html" data-i18n="nav_committees">Committees</a></li>
+                <li><a href="legislation.html" data-i18n="nav_legislation">Legislation</a></li>
+                <li><a href="voting.html" data-i18n="nav_voting">Voting</a></li>
+                <li><a href="records.html" data-i18n="nav_records">Records</a></li>
+                <li><a href="budget.html" data-i18n="nav_budget">Budget</a></li>
+                <li><a href="treaties.html" data-i18n="nav_treaties">Treaties</a></li>
+                <li><a href="petition.html" data-i18n="nav_petition">Petition</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <div class="container">
+            <h1 data-i18n="legislation_title">法律</h1>
+            <p>法律案・条約案の提出と審議 | Bills and Treaty Proposals</p>
+        </div>
+    </section>
+
+    <!-- Legislation Content -->
+    <section class="content-section">
+        <div class="container">
+            <!-- Legislation Stats -->
+            <div class="legislation-stats">
+                <div class="stat-card">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">提出法案<br>Submitted Bills</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">可決法案<br>Passed Bills</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">審議中<br>Under Deliberation</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">成立法律<br>Enacted Laws</div>
+                </div>
+            </div>
+
+            <!-- Bills Table -->
+            <div class="bills-section">
+                <h2>法案一覧 | Bill List</h2>
+                <div class="bills-table-wrapper">
+                    <table class="bills-table">
+                        <thead>
+                            <tr>
+                                <th>番号 | No.</th>
+                                <th>法案名 | Bill Name</th>
+                                <th>提出者 | Sponsor</th>
+                                <th>状態 | Status</th>
+                                <th>提出日 | Submitted</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>衆法第1号</td>
+                                <td>令和7年度予算案</td>
+                                <td>内閣提出</td>
+                                <td><span class="status active">審議中</span></td>
+                                <td>2025.01.15</td>
+                            </tr>
+                            <tr>
+                                <td>衆法第2号</td>
+                                <td>刑法一部改正案</td>
+                                <td>法務委員会</td>
+                                <td><span class="status active">審議中</span></td>
+                                <td>2025.01.14</td>
+                            </tr>
+                            <tr>
+                                <td>衆法第3号</td>
+                                <td>デジタル社会整備基本法</td>
+                                <td>自由民主党</td>
+                                <td><span class="status passed">可決</span></td>
+                                <td>2025.01.13</td>
+                            </tr>
+                            <tr>
+                                <td>衆法第4号</td>
+                                <td>エネルギー政策基本法改正案</td>
+                                <td>日本維新の会</td>
+                                <td><span class="status active">審議中</span></td>
+                                <td>2025.01.12</td>
+                            </tr>
+                            <tr>
+                                <td>衆法第5号</td>
+                                <td>地方創生推進法改正案</td>
+                                <td>公明党</td>
+                                <td><span class="status passed">可決</span></td>
+                                <td>2025.01.11</td>
+                            </tr>
+                            <tr>
+                                <td>衆法第6号</td>
+                                <td>少子化対策推進法</td>
+                                <td>内閣提出</td>
+                                <td><span class="status active">審議中</span></td>
+                                <td>2025.01.10</td>
+                            </tr>
+                            <tr>
+                                <td>衆法第7号</td>
+                                <td>労働基準法改正案</td>
+                                <td>立憲民主党</td>
+                                <td><span class="status pending">審議待ち</span></td>
+                                <td>2025.01.09</td>
+                            </tr>
+                            <tr>
+                                <td>衆法第8号</td>
+                                <td>教育基本法改正案</td>
+                                <td>自由民主党</td>
+                                <td><span class="status passed">可決</span></td>
+                            </tr>
+                            <tr>
+                                <td>衆法第9号</td>
+                                <td>環境保護強化法</td>
+                                <td>日本共産党</td>
+                                <td><span class="status pending">審議待ち</span></td>
+                                <td>2025.01.07</td>
+                            </tr>
+                            <tr>
+                                <td>衆法第10号</td>
+                                <td>中小企業支援法改正案</td>
+                                <td>国民民主党</td>
+                                <td><span class="status active">審議中</span></td>
+                                <td>2025.01.06</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Legislative Process -->
+            <div class="process-section">
+                <h2>立法プロセス | Legislative Process</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h3>法案提出</h3>
+                        <p>Bill Submission</p>
+                        <p>内閣または議員から法案が提出されます</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h3>委員会審議</h3>
+                        <p>Committee Deliberation</p>
+                        <p>関係委員会で詳細な審議が行われます</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h3>本会議審議</h3>
+                        <p>Plenary Session Deliberation</p>
+                        <p>本会議で採決が行われます</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h3>他院送付</h3>
+                        <p>Send to Other House</p>
+                        <p>もう一方の議院に送付されます</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <h3>両院協議会</h3>
+                        <p>Conference Committee</p>
+                        <p>必要に応じて協議会が開催されます</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">6</div>
+                        <h3>公布</h3>
+                        <p>Promulgation</p>
+                        <p>天皇が法律を公布します</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Enactments -->
+            <div class="enactments-section">
+                <h2>最近の成立法律 | Recent Enactments</h2>
+                <div class="enactments-list">
+                    <div class="enactment-item">
+                        <div class="enactment-number">法律第1号</div>
+                        <h3>デジタル社会整備基本法</h3>
+                        <p>令和7年1月13日成立</p>
+                        <span class="enactment-date">2025.01.13</span>
+                    </div>
+                    <div class="enactment-item">
+                        <div class="enactment-number">法律第2号</div>
+                        <h3>地方創生推進法改正案</h3>
+                        <p>令和7年1月11日成立</p>
+                        <span class="enactment-date">2025.01.11</span>
+                    </div>
+                    <div class="enactment-item">
+                        <div class="enactment-number">法律第3号</div>
+                        <h3>教育基本法改正案</h3>
+                        <p>令和7年1月8日成立</p>
+                        <span class="enactment-date">2025.01.08</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>日本国会</h3>
+                    <p>〒100-0014 東京都千代田区永田町1-7-1</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 National Diet of Japan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

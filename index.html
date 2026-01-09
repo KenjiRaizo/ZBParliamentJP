@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日本国会 - National Diet of Japan</title>
+    <link rel="stylesheet" href="style.css">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Emblem_of_Japan.svg/100px-Emblem_of_Japan.svg.png" alt="日本の紋章">
+                    <h1>日本国会</h1>
+                    <span class="subtitle">National Diet of Japan</span>
+                </div>
+                <div class="header-controls">
+                    <div class="language-switcher">
+                        <button id="lang-ja" class="lang-btn active" onclick="setLanguage('ja')">日本語</button>
+                        <button id="lang-en" class="lang-btn" onclick="setLanguage('en')">English</button>
+                    </div>
+                    <button class="search-btn" onclick="window.location.href='search.html'">
+                        <span class="search-icon">🔍</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="schedule.html" data-i18n="nav_schedule">Schedule</a></li>
+                <li><a href="members.html" data-i18n="nav_members">Members</a></li>
+                <li><a href="committees.html" data-i18n="nav_committees">Committees</a></li>
+                <li><a href="legislation.html" data-i18n="nav_legislation">Legislation</a></li>
+                <li><a href="voting.html" data-i18n="nav_voting">Voting</a></li>
+                <li><a href="records.html" data-i18n="nav_records">Records</a></li>
+                <li><a href="budget.html" data-i18n="nav_budget">Budget</a></li>
+                <li><a href="treaties.html" data-i18n="nav_treaties">Treaties</a></li>
+                <li><a href="petition.html" data-i18n="nav_petition">Petition</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 data-i18n="hero_title">Welcome to the National Diet of Japan</h2>
+                <p data-i18n="hero_subtitle">The supreme organ of state power and the sole law-making organ of the State</p>
+                <div class="hero-buttons">
+                    <a href="schedule.html" class="btn btn-primary" data-i18n="btn_view_schedule">View Schedule</a>
+                    <a href="members.html" class="btn btn-secondary" data-i18n="btn_view_members">View Members</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Session -->
+    <section class="current-session">
+        <div class="container">
+            <h2 data-i18n="current_session">Current Session</h2>
+            <div class="session-card">
+                <div class="session-info">
+                    <h3>第0回国会</h3>
+                    <p data-i18n="session_dates">2026年1月1日-2026年2月31日</p>
+                    <p data-i18n="session_status">Regular Session</p>
+                </div>
+                <div class="session-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">0</span>
+                        <span class="stat-label" data-i18n="stat_bills">Bills</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">0</span>
+                        <span class="stat-label" data-i18n="stat_votes">Votes</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">0</span>
+                        <span class="stat-label" data-i18n="stat_petitions">Petitions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news">
+        <div class="container">
+            <h2 data-i18n="latest_news">Latest News</h2>
+            <div class="news-grid">
+                <article class="news-item">
+                    <div class="news-date">2036.02.01</div>
+                    <h3>第213回国会が開会</h3>
+                    <p data-i18n="news_1">The 213th Diet session has begun with the opening ceremony.</p>
+                </article>
+                <article class="news-item">
+                    <div class="news-date">2038.01.14</div>
+                    <h3>新法案が提出される</h3>
+                    <p data-i18n="news_2">New legislation has been submitted for consideration.</p>
+                </article>
+                <article class="news-item">
+                    <div class="news-date">2038.01.13</div>
+                    <h3>予算審議が始まる</h3>
+                    <p data-i18n="news_3">Budget deliberations have commenced in the House of Representatives.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Access -->
+    <section class="quick-access">
+        <div class="container">
+            <h2 data-i18n="quick_access">Quick Access</h2>
+            <div class="quick-access-grid">
+                <a href="schedule.html" class="quick-link">
+                    <div class="quick-icon">📅</div>
+                    <span data-i18n="nav_schedule">Schedule</span>
+                </a>
+                <a href="members.html" class="quick-link">
+                    <div class="quick-icon">👥</div>
+                    <span data-i18n="nav_members">Members</span>
+                </a>
+                <a href="legislation.html" class="quick-link">
+                    <div class="quick-icon">📜</div>
+                    <span data-i18n="nav_legislation">Legislation</span>
+                </a>
+                <a href="voting.html" class="quick-link">
+                    <div class="quick-icon">🗳️</div>
+                    <span data-i18n="nav_voting">Voting</span>
+                </a>
+                <a href="budget.html" class="quick-link">
+                    <div class="quick-icon">💰</div>
+                    <span data-i18n="nav_budget">Budget</span>
+                </a>
+                <a href="petition.html" class="quick-link">
+                    <div class="quick-icon">✉️</div>
+                    <span data-i18n="nav_petition">Petition</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>日本国会</h3>
+                    <p>〒100-0014 東京都千代田区永田町1-7-1</p>
+                    <p>National Diet Building, 1-7-1, Nagata-cho, Chiyoda-ku, Tokyo 100-0014 Japan</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://www.shugiin.go.jp/" target="_blank">衆議院</a>
+                    <a href="https://www.sangiin.go.jp/" target="_blank">参議院</a>
+                    <a href="https://www.ndl.go.jp/" target="_blank">国立国会図書館</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2038 National Diet of Japan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

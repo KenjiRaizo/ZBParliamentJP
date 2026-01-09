@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>請願 - Petition | National Diet of Japan</title>
+    <link rel="stylesheet" href="style.css">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Emblem_of_Japan.svg/100px-Emblem_of_Japan.svg.png" alt="日本の紋章">
+                    <h1>日本国会</h1>
+                    <span class="subtitle">National Diet of Japan</span>
+                </div>
+                <div class="header-controls">
+                    <div class="language-switcher">
+                        <button id="lang-ja" class="lang-btn active" onclick="setLanguage('ja')">日本語</button>
+                        <button id="lang-en" class="lang-btn" onclick="setLanguage('en')">English</button>
+                    </div>
+                    <button class="search-btn" onclick="window.location.href='search.html'">
+                        <span class="search-icon">🔍</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="schedule.html" data-i18n="nav_schedule">Schedule</a></li>
+                <li><a href="members.html" data-i18n="nav_members">Members</a></li>
+                <li><a href="committees.html" data-i18n="nav_committees">Committees</a></li>
+                <li><a href="legislation.html" data-i18n="nav_legislation">Legislation</a></li>
+                <li><a href="voting.html" data-i18n="nav_voting">Voting</a></li>
+                <li><a href="records.html" data-i18n="nav_records">Records</a></li>
+                <li><a href="budget.html" data-i18n="nav_budget">Budget</a></li>
+                <li><a href="treaties.html" data-i18n="nav_treaties">Treaties</a></li>
+                <li><a href="petition.html" data-i18n="nav_petition">Petition</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <div class="container">
+            <h1 data-i18n="petition_title">請願</h1>
+            <p>請願の提出・審議 | Petition Submission and Deliberation</p>
+        </div>
+    </section>
+
+    <!-- Petition Content -->
+    <section class="content-section">
+        <div class="container">
+            <!-- Petition Stats -->
+            <div class="petition-stats">
+                <div class="stat-card">
+                    <div class="stat-number">1,245</div>
+                    <div class="stat-label">総請願数<br>Total Petitions</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">389</div>
+                    <div class="stat-label">採択請願<br>Adopted</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">612</div>
+                    <div class="stat-label">審議中<br>Under Deliberation</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">244</div>
+                    <div class="stat-label">不採択<br>Rejected</div>
+                </div>
+            </div>
+
+            <!-- Petition Categories -->
+            <div class="petition-categories">
+                <h2>請願分類 | Petition Categories</h2>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <h3>社会保障</h3>
+                        <p>Social Security</p>
+                        <span>245件</span>
+                    </div>
+                    <div class="category-card">
+                        <h3>教育</h3>
+                        <p>Education</p>
+                        <span>189件</span>
+                    </div>
+                    <div class="category-card">
+                        <h3>環境</h3>
+                        <p>Environment</p>
+                        <span>167件</span>
+                    </div>
+                    <div class="category-card">
+                        <h3>経済</h3>
+                        <p>Economy</p>
+                        <span>156件</span>
+                    </div>
+                    <div class="category-card">
+                        <h3>医療</h3>
+                        <p>Healthcare</p>
+                        <span>142件</span>
+                    </div>
+                    <div class="category-card">
+                        <h3>その他</h3>
+                        <p>Other</p>
+                        <span>346件</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Petitions -->
+            <div class="petitions-section">
+                <h2>最近の請願 | Recent Petitions</h2>
+                <div class="petitions-table-wrapper">
+                    <table class="petitions-table">
+                        <thead>
+                            <tr>
+                                <th>番号 | No.</th>
+                                <th>請願名 | Petition Name</th>
+                                <th>提出者 | Sponsor</th>
+                                <th>署名数 | Signatures</th>
+                                <th>状態 | Status</th>
+                                <th>提出日 | Submitted</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>請願第1号</td>
+                                <td>少子化対策強化に関する請願</td>
+                                <td>田中 健一</td>
+                                <td>25,680</td>
+                                <td><span class="status active">審議中</span></td>
+                                <td>2025.01.15</td>
+                            </tr>
+                            <tr>
+                                <td>請願第2号</td>
+                                <td>教育無償化拡大に関する請願</td>
+                                <td>山本 花子</td>
+                                <td>18,450</td>
+                                <td><span class="status passed">採択</span></td>
+                                <td>2025.01.14</td>
+                            </tr>
+                            <tr>
+                                <td>請願第3号</td>
+                                <td>再生可能エネルギー推進に関する請願</td>
+                                <td>佐藤 太郎</td>
+                                <td>32,120</td>
+                                <td><span class="status active">審議中</span></td>
+                                <td>2025.01.13</td>
+                            </tr>
+                            <tr>
+                                <td>請願第4号</td>
+                                <td>医療制度改善に関する請願</td>
+                                <td>鈴木 美咲</td>
+                                <td>21,890</td>
+                                <td><span class="status passed">採択</span></td>
+                                <td>2025.01.12</td>
+                            </tr>
+                            <tr>
+                                <td>請願第5号</td>
+                                <td>中小企業支援強化に関する請願</td>
+                                <td>高橋 健太</td>
+                                <td>15,670</td>
+                                <td><span class="status active">審議中</span></td>
+                                <td>2025.01.11</td>
+                            </tr>
+                            <tr>
+                                <td>請願第6号</td>
+                                <td>地域公共交通整備に関する請願</td>
+                                <td>伊藤 真由美</td>
+                                <td>12,340</td>
+                                <td><span class="status pending">審議待ち</span></td>
+                                <td>2025.01.10</td>
+                            </tr>
+                            <tr>
+                                <td>請願第7号</td>
+                                <td>食品安全基準強化に関する請願</td>
+                                <td>渡辺 隆</td>
+                                <td>28,560</td>
+                                <td><span class="status active">審議中</span></td>
+                                <td>2025.01.09</td>
+                            </tr>
+                            <tr>
+                                <td>請願第8号</td>
+                                <td>高齢者福祉充実に関する請願</td>
+                                <td>中村 恵</td>
+                                <td>19,890</td>
+                                <td><span class="status passed">採択</span></td>
+                                <td>2025.01.08</td>
+                            </tr>
+                            <tr>
+                                <td>請願第9号</td>
+                                <td>デジタル教育推進に関する請願</td>
+                                <td>小林 一郎</td>
+                                <td>14,230</td>
+                                <td><span class="status active">審議中</span></td>
+                                <td>2025.01.07</td>
+                            </tr>
+                            <tr>
+                                <td>請願第10号</td>
+                                <td>労働環境改善に関する請願</td>
+                                <td>加藤 由美</td>
+                                <td>17,450</td>
+                                <td><span class="status pending">審議待ち</span></td>
+                                <td>2025.01.06</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Submit Petition -->
+            <div class="submit-petition">
+                <h2>請願の提出 | Submit a Petition</h2>
+                <form class="petition-form">
+                    <div class="form-group">
+                        <label>請願名 | Petition Title</label>
+                        <input type="text" placeholder="請願のタイトルを入力してください">
+                    </div>
+                    <div class="form-group">
+                        <label>請願内容 | Petition Content</label>
+                        <textarea rows="6" placeholder="請願の内容を詳しく記述してください"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>紹介議員 | Introducing Diet Member</label>
+                        <select>
+                            <option>選択してください | Please select</option>
+                            <option>田中 健一</option>
+                            <option>山本 花子</option>
+                            <option>佐藤 太郎</option>
+                            <option>鈴木 美咲</option>
+                            <option>高橋 健太</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>署名者情報 | Signatory Information</label>
+                        <input type="text" placeholder="氏名 | Name">
+                    </div>
+                    <div class="form-group">
+                        <label>連絡先 | Contact Information</label>
+                        <input type="email" placeholder="メールアドレス | Email Address">
+                    </div>
+                    <button type="submit" class="btn btn-primary">提出 | Submit</button>
+                </form>
+            </div>
+
+            <!-- Petition Process -->
+            <div class="petition-process">
+                <h2>請願手続 | Petition Process</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h3>請願作成</h3>
+                        <p>Draft Petition</p>
+                        <p>請願の内容を文書にまとめます</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h3>議員紹介</h3>
+                        <p>Diet Member Introduction</p>
+                        <p>国会議員の紹介が必要です</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h3>国会提出</h3>
+                        <p>Submit to Diet</p>
+                        <p>国会に請願を提出します</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h3>委員会審議</h3>
+                        <p>Committee Deliberation</p>
+                        <p>関係委員会で審議されます</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <h3>採択決定</h3>
+                        <p>Adoption Decision</p>
+                        <p>採択・不採択が決定されます</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">6</div>
+                        <h3>結果通知</h3>
+                        <p>Result Notification</p>
+                        <p>請願者に結果が通知されます</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>日本国会</h3>
+                    <p>〒100-0014 東京都千代田区永田町1-7-1</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 National Diet of Japan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

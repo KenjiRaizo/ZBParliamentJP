@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>条約 - Treaties | National Diet of Japan</title>
+    <link rel="stylesheet" href="style.css">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Emblem_of_Japan.svg/100px-Emblem_of_Japan.svg.png" alt="日本の紋章">
+                    <h1>日本国会</h1>
+                    <span class="subtitle">National Diet of Japan</span>
+                </div>
+                <div class="header-controls">
+                    <div class="language-switcher">
+                        <button id="lang-ja" class="lang-btn active" onclick="setLanguage('ja')">日本語</button>
+                        <button id="lang-en" class="lang-btn" onclick="setLanguage('en')">English</button>
+                    </div>
+                    <button class="search-btn" onclick="window.location.href='search.html'">
+                        <span class="search-icon">🔍</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="schedule.html" data-i18n="nav_schedule">Schedule</a></li>
+                <li><a href="members.html" data-i18n="nav_members">Members</a></li>
+                <li><a href="committees.html" data-i18n="nav_committees">Committees</a></li>
+                <li><a href="legislation.html" data-i18n="nav_legislation">Legislation</a></li>
+                <li><a href="voting.html" data-i18n="nav_voting">Voting</a></li>
+                <li><a href="records.html" data-i18n="nav_records">Records</a></li>
+                <li><a href="budget.html" data-i18n="nav_budget">Budget</a></li>
+                <li><a href="treaties.html" data-i18n="nav_treaties">Treaties</a></li>
+                <li><a href="petition.html" data-i18n="nav_petition">Petition</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <div class="container">
+            <h1 data-i18n="treaties_title">条約</h1>
+            <p>条約の締結・批准 | Treaty Conclusion and Ratification</p>
+        </div>
+    </section>
+
+    <!-- Treaties Content -->
+    <section class="content-section">
+        <div class="container">
+            <!-- Treaties Stats -->
+            <div class="treaties-stats">
+                <div class="stat-card">
+                    <div class="stat-number">48</div>
+                    <div class="stat-label">総条約数<br>Total Treaties</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">審議中<br>Under Deliberation</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">36</div>
+                    <div class="stat-label">承認済み<br>Approved</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">新規条約<br>New Treaties</div>
+                </div>
+            </div>
+
+            <!-- Treaties List -->
+            <div class="treaties-section">
+                <h2>条約一覧 | Treaty List</h2>
+                <div class="treaties-table-wrapper">
+                    <table class="treaties-table">
+                        <thead>
+                            <tr>
+                                <th>番号 | No.</th>
+                                <th>条約名 | Treaty Name</th>
+                                <th>相手国 | Counterpart</th>
+                                <th>状態 | Status</th>
+                                <th>提出日 | Submitted</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>条約第1号</td>
+                                <td>日米防衛協力のための援助協定</td>
+                                <td>アメリカ合衆国</td>
+                                <td><span class="status active">審議中</span></td>
+                                <td>2025.01.15</td>
+                            </tr>
+                            <tr>
+                                <td>条約第2号</td>
+                                <td>日EU経済連携協定改正議定書</td>
+                                <td>欧州連合</td>
+                                <td><span class="status passed">承認</span></td>
+                                <td>2025.01.14</td>
+                            </tr>
+                            <tr>
+                                <td>条約第3号</td>
+                                <td>日中租税条約改正議定書</td>
+                                <td>中国</td>
+                                <td><span class="status active">審議中</span></td>
+                                <td>2025.01.13</td>
+                            </tr>
+                            <tr>
+                                <td>条約第4号</td>
+                                <td>日韓刑事共助条約</td>
+                                <td>韓国</td>
+                                <td><span class="status passed">承認</span></td>
+                                <td>2025.01.12</td>
+                            </tr>
+                            <tr>
+                                <td>条約第5号</td>
+                                <td>ASEAN・日本包括的経済連携協定</td>
+                                <td>ASEAN諸国</td>
+                                <td><span class="status passed">承認</span></td>
+                                <td>2025.01.11</td>
+                            </tr>
+                            <tr>
+                                <td>条約第6号</td>
+                                <td>日豪漁業協定改正議定書</td>
+                                <td>オーストラリア</td>
+                                <td><span class="status active">審議中</span></td>
+                                <td>2025.01.10</td>
+                            </tr>
+                            <tr>
+                                <td>条約第7号</td>
+                                <td>日加航空協定</td>
+                                <td>カナダ</td>
+                                <td><span class="status passed">承認</span></td>
+                                <td>2025.01.09</td>
+                            </tr>
+                            <tr>
+                                <td>条約第8号</td>
+                                <td>国際原子力機関保障措置協定追加議定書</td>
+                                <td>IAEA</td>
+                                <td><span class="status active">審議中</span></td>
+                                <td>2025.01.08</td>
+                            </tr>
+                            <tr>
+                                <td>条約第9号</td>
+                                <td>日英科学技術協力協定</td>
+                                <td>イギリス</td>
+                                <td><span class="status passed">承認</span></td>
+                                <td>2025.01.07</td>
+                            </tr>
+                            <tr>
+                                <td>条約第10号</td>
+                                <td>日独文化協力協定</td>
+                                <td>ドイツ</td>
+                                <td><span class="status active">審議中</span></td>
+                                <td>2025.01.06</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Treaty Process -->
+            <div class="treaty-process">
+                <h2>条約締結プロセス | Treaty Conclusion Process</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h3>署名</h3>
+                        <p>Signing</p>
+                        <p>日本と相手国が条約に署名します</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h3>閣議決定</h3>
+                        <p>Cabinet Decision</p>
+                        <p>内閣が国会への承認請求を決定します</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h3>国会承認</h3>
+                        <p>Diet Approval</p>
+                        <p>国会が条約を承認します</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h3>批准</h3>
+                        <p>Ratification</p>
+                        <p>天皇が条約を批准します</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <h3>批准書交換</h3>
+                        <p>Exchange of Ratification</p>
+                        <p>相手国と批准書を交換します</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">6</div>
+                        <h3>発効</h3>
+                        <p>Entry into Force</p>
+                        <p>条約が発効します</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Ratifications -->
+            <div class="ratifications-section">
+                <h2>最近の承認条約 | Recent Ratifications</h2>
+                <div class="ratifications-list">
+                    <div class="ratification-item">
+                        <div class="ratification-number">条約第2号</div>
+                        <h3>日EU経済連携協定改正議定書</h3>
+                        <p>2025年1月14日承認</p>
+                        <span class="ratification-date">2025.01.14</span>
+                    </div>
+                    <div class="ratification-item">
+                        <div class="ratification-number">条約第4号</div>
+                        <h3>日韓刑事共助条約</h3>
+                        <p>2025年1月12日承認</p>
+                        <span class="ratification-date">2025.01.12</span>
+                    </div>
+                    <div class="ratification-item">
+                        <div class="ratification-number">条約第5号</div>
+                        <h3>ASEAN・日本包括的経済連携協定</h3>
+                        <p>2025年1月11日承認</p>
+                        <span class="ratification-date">2025.01.11</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Treaty Categories -->
+            <div class="categories-section">
+                <h2>条約分類 | Treaty Categories</h2>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <h3>二国間条約</h3>
+                        <p>Bilateral Treaties</p>
+                        <span>32件</span>
+                    </div>
+                    <div class="category-card">
+                        <h3>多国間条約</h3>
+                        <p>Multilateral Treaties</p>
+                        <span>16件</span>
+                    </div>
+                    <div class="category-card">
+                        <h3>経済協定</h3>
+                        <p>Economic Agreements</p>
+                        <span>18件</span>
+                    </div>
+                    <div class="category-card">
+                        <h3>安全保障条約</h3>
+                        <p>Security Treaties</p>
+                        <span>8件</span>
+                    </div>
+                    <div class="category-card">
+                        <h3>環境条約</h3>
+                        <p>Environmental Treaties</p>
+                        <span>12件</span>
+                    </div>
+                    <div class="category-card">
+                        <h3>その他</h3>
+                        <p>Other Treaties</p>
+                        <span>10件</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>日本国会</h3>
+                    <p>〒100-0014 東京都千代田区永田町1-7-1</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 National Diet of Japan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

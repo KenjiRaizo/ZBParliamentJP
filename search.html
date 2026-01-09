@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>検索 - Search | National Diet of Japan</title>
+    <link rel="stylesheet" href="style.css">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Emblem_of_Japan.svg/100px-Emblem_of_Japan.svg.png" alt="日本の紋章">
+                    <h1>日本国会</h1>
+                    <span class="subtitle">National Diet of Japan</span>
+                </div>
+                <div class="header-controls">
+                    <div class="language-switcher">
+                        <button id="lang-ja" class="lang-btn active" onclick="setLanguage('ja')">日本語</button>
+                        <button id="lang-en" class="lang-btn" onclick="setLanguage('en')">English</button>
+                    </div>
+                    <button class="search-btn">
+                        <span class="search-icon">🔍</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="schedule.html" data-i18n="nav_schedule">Schedule</a></li>
+                <li><a href="members.html" data-i18n="nav_members">Members</a></li>
+                <li><a href="committees.html" data-i18n="nav_committees">Committees</a></li>
+                <li><a href="legislation.html" data-i18n="nav_legislation">Legislation</a></li>
+                <li><a href="voting.html" data-i18n="nav_voting">Voting</a></li>
+                <li><a href="records.html" data-i18n="nav_records">Records</a></li>
+                <li><a href="budget.html" data-i18n="nav_budget">Budget</a></li>
+                <li><a href="treaties.html" data-i18n="nav_treaties">Treaties</a></li>
+                <li><a href="petition.html" data-i18n="nav_petition">Petition</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <div class="container">
+            <h1>検索 | Search</h1>
+            <p>国会情報を検索 | Search Diet Information</p>
+        </div>
+    </section>
+
+    <!-- Search Content -->
+    <section class="content-section">
+        <div class="container">
+            <!-- Search Form -->
+            <div class="search-section">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="キーワードを入力 | Enter keywords">
+                    <button class="search-submit">検索 | Search</button>
+                </div>
+                
+                <div class="search-filters">
+                    <div class="filter-group">
+                        <label>カテゴリ | Category</label>
+                        <select>
+                            <option>すべて | All</option>
+                            <option>日程 | Schedule</option>
+                            <option>議員 | Members</option>
+                            <option>委員会 | Committees</option>
+                            <option>法律 | Legislation</option>
+                            <option>表決 | Voting</option>
+                            <option>議事録 | Records</option>
+                            <option>予算 | Budget</option>
+                            <option>条約 | Treaties</option>
+                            <option>請願 | Petition</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>期間 | Period</label>
+                        <select>
+                            <option>すべて | All</option>
+                            <option>今日 | Today</option>
+                            <option>今週 | This Week</option>
+                            <option>今月 | This Month</option>
+                            <option>過去3ヶ月 | Past 3 Months</option>
+                            <option>過去1年 | Past 1 Year</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="quick-links">
+                <h2>クイックリンク | Quick Links</h2>
+                <div class="quick-links-grid">
+                    <a href="schedule.html" class="quick-link-card">
+                        <h3>会議日程</h3>
+                        <p>Schedule</p>
+                        <span>→</span>
+                    </a>
+                    <a href="members.html" class="quick-link-card">
+                        <h3>議員一覧</h3>
+                        <p>Members</p>
+                        <span>→</span>
+                    </a>
+                    <a href="committees.html" class="quick-link-card">
+                        <h3>委員会</h3>
+                        <p>Committees</p>
+                        <span>→</span>
+                    </a>
+                    <a href="legislation.html" class="quick-link-card">
+                        <h3>法律</h3>
+                        <p>Legislation</p>
+                        <span>→</span>
+                    </a>
+                    <a href="voting.html" class="quick-link-card">
+                        <h3>表決</h3>
+                        <p>Voting</p>
+                        <span>→</span>
+                    </a>
+                    <a href="records.html" class="quick-link-card">
+                        <h3>議事録</h3>
+                        <p>Records</p>
+                        <span>→</span>
+                    </a>
+                    <a href="budget.html" class="quick-link-card">
+                        <h3>予算</h3>
+                        <p>Budget</p>
+                        <span>→</span>
+                    </a>
+                    <a href="treaties.html" class="quick-link-card">
+                        <h3>条約</h3>
+                        <p>Treaties</p>
+                        <span>→</span>
+                    </a>
+                    <a href="petition.html" class="quick-link-card">
+                        <h3>請願</h3>
+                        <p>Petition</p>
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Popular Searches -->
+            <div class="popular-searches">
+                <h2>人気の検索 | Popular Searches</h2>
+                <div class="popular-tags">
+                    <span class="tag">予算</span>
+                    <span class="tag">刑法改正</span>
+                    <span class="tag">少子化対策</span>
+                    <span class="tag">デジタル社会</span>
+                    <span class="tag">エネルギー政策</span>
+                    <span class="tag">教育無償化</span>
+                    <span class="tag">地方創生</span>
+                    <span class="tag">社会保障</span>
+                </div>
+            </div>
+
+            <!-- Help -->
+            <div class="search-help">
+                <h2>検索のヒント | Search Tips</h2>
+                <div class="tips-list">
+                    <div class="tip-item">
+                        <h3>キーワード検索</h3>
+                        <p>特定の単語やフレーズで検索できます</p>
+                    </div>
+                    <div class="tip-item">
+                        <h3>フィルター活用</h3>
+                        <p>カテゴリや期間で絞り込みが可能です</p>
+                    </div>
+                    <div class="tip-item">
+                        <h3>部分一致</h3>
+                        <p>入力した文字を含むすべての結果が表示されます</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>日本国会</h3>
+                    <p>〒100-0014 東京都千代田区永田町1-7-1</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 National Diet of Japan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表決 - Voting | National Diet of Japan</title>
+    <link rel="stylesheet" href="style.css">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Emblem_of_Japan.svg/100px-Emblem_of_Japan.svg.png" alt="日本の紋章">
+                    <h1>日本国会</h1>
+                    <span class="subtitle">National Diet of Japan</span>
+                </div>
+                <div class="header-controls">
+                    <div class="language-switcher">
+                        <button id="lang-ja" class="lang-btn active" onclick="setLanguage('ja')">日本語</button>
+                        <button id="lang-en" class="lang-btn" onclick="setLanguage('en')">English</button>
+                    </div>
+                    <button class="search-btn" onclick="window.location.href='search.html'">
+                        <span class="search-icon">🔍</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="schedule.html" data-i18n="nav_schedule">Schedule</a></li>
+                <li><a href="members.html" data-i18n="nav_members">Members</a></li>
+                <li><a href="committees.html" data-i18n="nav_committees">Committees</a></li>
+                <li><a href="legislation.html" data-i18n="nav_legislation">Legislation</a></li>
+                <li><a href="voting.html" data-i18n="nav_voting">Voting</a></li>
+                <li><a href="records.html" data-i18n="nav_records">Records</a></li>
+                <li><a href="budget.html" data-i18n="nav_budget">Budget</a></li>
+                <li><a href="treaties.html" data-i18n="nav_treaties">Treaties</a></li>
+                <li><a href="petition.html" data-i18n="nav_petition">Petition</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <div class="container">
+            <h1 data-i18n="voting_title">表決</h1>
+            <p>採決結果・表決記録 | Voting Records</p>
+        </div>
+    </section>
+
+    <!-- Voting Content -->
+    <section class="content-section">
+        <div class="container">
+            <!-- Voting Stats -->
+            <div class="voting-stats">
+                <div class="stat-card">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">表決回数<br>Vote Count</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">可決案件<br>Passed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">否決案件<br>Rejected</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">保留案件<br>Withheld</div>
+                </div>
+            </div>
+
+            <!-- Recent Votes -->
+            <div class="votes-section">
+                <h2>最近の表決 | Recent Votes</h2>
+                <div class="votes-table-wrapper">
+                    <table class="votes-table">
+                        <thead>
+                            <tr>
+                                <th>日付 | Date</th>
+                                <th>案件 | Matter</th>
+                                <th>賛成 | Aye</th>
+                                <th>反対 | Nay</th>
+                                <th>棄権 | Abstain</th>
+                                <th>結果 | Result</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2025.01.15</td>
+                                <td>令和7年度予算案</td>
+                                <td>285</td>
+                                <td>180</td>
+                                <td>0</td>
+                                <td><span class="result passed">可決</span></td>
+                            </tr>
+                            <tr>
+                                <td>2025.01.14</td>
+                                <td>デジタル社会整備基本法</td>
+                                <td>320</td>
+                                <td>145</td>
+                                <td>0</td>
+                                <td><span class="result passed">可決</span></td>
+                            </tr>
+                            <tr>
+                                <td>2025.01.13</td>
+                                <td>刑法一部改正案</td>
+                                <td>240</td>
+                                <td>225</td>
+                                <td>0</td>
+                                <td><span class="result passed">可決</span></td>
+                            </tr>
+                            <tr>
+                                <td>2025.01.12</td>
+                                <td>労働基準法改正案</td>
+                                <td>180</td>
+                                <td>285</td>
+                                <td>0</td>
+                                <td><span class="result rejected">否決</span></td>
+                            </tr>
+                            <tr>
+                                <td>2025.01.11</td>
+                                <td>エネルギー政策基本法改正案</td>
+                                <td>265</td>
+                                <td>200</td>
+                                <td>0</td>
+                                <td><span class="result passed">可決</span></td>
+                            </tr>
+                            <tr>
+                                <td>2025.01.10</td>
+                                <td>地方創生推進法改正案</td>
+                                <td>300</td>
+                                <td>165</td>
+                                <td>0</td>
+                                <td><span class="result passed">可決</span></td>
+                            </tr>
+                            <tr>
+                                <td>2025.01.09</td>
+                                <td>教育基本法改正案</td>
+                                <td>290</td>
+                                <td>175</td>
+                                <td>0</td>
+                                <td><span class="result passed">可決</span></td>
+                            </tr>
+                            <tr>
+                                <td>2025.01.08</td>
+                                <td>環境保護強化法</td>
+                                <td>195</td>
+                                <td>270</td>
+                                <td>0</td>
+                                <td><span class="result rejected">否決</span></td>
+                            </tr>
+                            <tr>
+                                <td>2025.01.07</td>
+                                <td>中小企業支援法改正案</td>
+                                <td>310</td>
+                                <td>155</td>
+                                <td>0</td>
+                                <td><span class="result passed">可決</span></td>
+                            </tr>
+                            <tr>
+                                <td>2025.01.06</td>
+                                <td>少子化対策推進法</td>
+                                <td>275</td>
+                                <td>190</td>
+                                <td>0</td>
+                                <td><span class="result passed">可決</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Voting by Party -->
+            <div class="party-voting-section">
+                <h2>党派別投票結果 | Voting by Party</h2>
+                <div class="party-voting-grid">
+                    <div class="party-voting-card">
+                        <h3>統一戦線</h3>
+                        <p>United Front</p>
+                        <div class="voting-bars">
+                            <div class="voting-bar">
+                                <span class="label">賛成 Aye</span>
+                                <div class="bar-container">
+                                    <div class="bar passed" style="width: 0%"></div>
+                                </div>
+                                <span class="count">0</span>
+                            </div>
+                            <div class="voting-bar">
+                                <span class="label">反対 Nay</span>
+                                <div class="bar-container">
+                                    <div class="bar rejected" style="width: 0%"></div>
+                                </div>
+                                <span class="count">0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="party-voting-card">
+                        <h3>日本社会主義労働者党</h3>
+                        <p>Japanese Socialist Workers Party</p>
+                        <div class="voting-bars">
+                            <div class="voting-bar">
+                                <span class="label">賛成 Aye</span>
+                                <div class="bar-container">
+                                    <div class="bar passed" style="width: 0%"></div>
+                                </div>
+                                <span class="count">0</span>
+                            </div>
+                            <div class="voting-bar">
+                                <span class="label">反対 Nay</span>
+                                <div class="bar-container">
+                                    <div class="bar rejected" style="width: 0%"></div>
+                                </div>
+                                <span class="count">0</span>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+              </div>
+          </div>
+
+            <!-- Voting Procedures -->
+            <div class="procedures-section">
+                <h2>表決手続 | Voting Procedures</h2>
+                <div class="procedures-list">
+                    <div class="procedure-item">
+                        <h3>起立表決</h3>
+                        <p>Standing Vote</p>
+                        <p>賛成者が立ち上がり、反対者が座ったままで表決を行います</p>
+                    </div>
+                    <div class="procedure-item">
+                        <h3>採決</h3>
+                        <p>Division</p>
+                        <p>賛成と反対が別々の出口から退室し、人数を数えます</p>
+                    </div>
+                    <div class="procedure-item">
+                        <h3>記名投票</h3>
+                        <p>Recorded Vote</p>
+                        <p>各議員の投票が記録される投票方式です</p>
+                    </div>
+                    <div class="procedure-item">
+                        <h3>無記名投票</h3>
+                        <p>Secret Ballot</p>
+                        <p>投票者が特定されない投票方式です</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>日本国会</h3>
+                    <p>〒100-0014 東京都千代田区永田町1-7-1</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 National Diet of Japan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>予算 - Budget | National Diet of Japan</title>
+    <link rel="stylesheet" href="style.css">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Emblem_of_Japan.svg/100px-Emblem_of_Japan.svg.png" alt="日本の紋章">
+                    <h1>日本国会</h1>
+                    <span class="subtitle">National Diet of Japan</span>
+                </div>
+                <div class="header-controls">
+                    <div class="language-switcher">
+                        <button id="lang-ja" class="lang-btn active" onclick="setLanguage('ja')">日本語</button>
+                        <button id="lang-en" class="lang-btn" onclick="setLanguage('en')">English</button>
+                    </div>
+                    <button class="search-btn" onclick="window.location.href='search.html'">
+                        <span class="search-icon">🔍</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="schedule.html" data-i18n="nav_schedule">Schedule</a></li>
+                <li><a href="members.html" data-i18n="nav_members">Members</a></li>
+                <li><a href="committees.html" data-i18n="nav_committees">Committees</a></li>
+                <li><a href="legislation.html" data-i18n="nav_legislation">Legislation</a></li>
+                <li><a href="voting.html" data-i18n="nav_voting">Voting</a></li>
+                <li><a href="records.html" data-i18n="nav_records">Records</a></li>
+                <li><a href="budget.html" data-i18n="nav_budget">Budget</a></li>
+                <li><a href="treaties.html" data-i18n="nav_treaties">Treaties</a></li>
+                <li><a href="petition.html" data-i18n="nav_petition">Petition</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <div class="container">
+            <h1 data-i18n="budget_title">予算</h1>
+            <p>国家予算・財政情報 | National Budget and Fiscal Information</p>
+        </div>
+    </section>
+
+    <!-- Budget Content -->
+    <section class="content-section">
+        <div class="container">
+            <!-- Budget Overview -->
+            <div class="budget-overview">
+                <div class="budget-summary">
+                    <h2>令和7年度予算 | FY2025 Budget</h2>
+                    <div class="total-budget">
+                        <div class="budget-amount">114.4兆円</div>
+                        <div class="budget-label">総予算額 | Total Budget</div>
+                    </div>
+                    <div class="budget-comparison">
+                        <span>前年比 | YoY:</span>
+                        <span class="increase">+2.3%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Budget Breakdown -->
+            <div class="budget-breakdown">
+                <h2>予算内訳 | Budget Breakdown</h2>
+                <div class="budget-table-wrapper">
+                    <table class="budget-table">
+                        <thead>
+                            <tr>
+                                <th>項目 | Category</th>
+                                <th>金額 | Amount</th>
+                                <th>割合 | Percentage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>社会保障費</td>
+                                <td>36.8兆円</td>
+                                <td>32.2%</td>
+                            </tr>
+                            <tr>
+                                <td>公共事業費</td>
+                                <td>7.2兆円</td>
+                                <td>6.3%</td>
+                            </tr>
+                            <tr>
+                                <td>文教科学振興費</td>
+                                <td>5.9兆円</td>
+                                <td>5.2%</td>
+                            </tr>
+                            <tr>
+                                <td>地方交付税交付金</td>
+                                <td>16.5兆円</td>
+                                <td>14.4%</td>
+                            </tr>
+                            <tr>
+                                <td>防衛費</td>
+                                <td>7.9兆円</td>
+                                <td>6.9%</td>
+                            </tr>
+                            <tr>
+                                <td>国債費</td>
+                                <td>25.3兆円</td>
+                                <td>22.1%</td>
+                            </tr>
+                            <tr>
+                                <td>その他</td>
+                                <td>14.8兆円</td>
+                                <td>12.9%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Revenue Sources -->
+            <div class="revenue-section">
+                <h2>歳入 | Revenue Sources</h2>
+                <div class="revenue-grid">
+                    <div class="revenue-card">
+                        <h3>税収</h3>
+                        <p>Tax Revenue</p>
+                        <div class="revenue-amount">69.4兆円</div>
+                        <div class="revenue-percent">60.7%</div>
+                    </div>
+                    <div class="revenue-card">
+                        <h3>公債金</h3>
+                        <p>Government Bonds</p>
+                        <div class="revenue-amount">35.4兆円</div>
+                        <div class="revenue-percent">31.0%</div>
+                    </div>
+                    <div class="revenue-card">
+                        <h3>その他収入</h3>
+                        <p>Other Revenue</p>
+                        <div class="revenue-amount">9.6兆円</div>
+                        <div class="revenue-percent">8.3%</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Budget Process -->
+            <div class="budget-process">
+                <h2>予算審議プロセス | Budget Deliberation Process</h2>
+                <div class="process-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">1月</div>
+                        <div class="timeline-content">
+                            <h3>予算案提出</h3>
+                            <p>内閣から予算案が国会に提出されます</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1月-2月</div>
+                        <div class="timeline-content">
+                            <h3>予算委員会審議</h3>
+                            <p>予算委員会で詳細な審議が行われます</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2月</div>
+                        <div class="timeline-content">
+                            <h3>衆議院本会議採決</h3>
+                            <p>衆議院本会議で予算案が採決されます</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">3月</div>
+                        <div class="timeline-content">
+                            <h3>参議院本会議採決</h3>
+                            <p>参議院本会議で予算案が採決されます</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">4月</div>
+                        <div class="timeline-content">
+                            <h3>予算成立</h3>
+                            <p>新年度の予算が成立します</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Past Budgets -->
+            <div class="past-budgets">
+                <h2>過去の予算 | Past Budgets</h2>
+                <div class="budget-history">
+                    <div class="budget-year">
+                        <h3>令和6年度 (FY2024)</h3>
+                        <p>111.8兆円</p>
+                    </div>
+                    <div class="budget-year">
+                        <h3>令和5年度 (FY2023)</h3>
+                        <p>114.4兆円</p>
+                    </div>
+                    <div class="budget-year">
+                        <h3>令和4年度 (FY2022)</h3>
+                        <p>107.6兆円</p>
+                    </div>
+                    <div class="budget-year">
+                        <h3>令和3年度 (FY2021)</h3>
+                        <p>106.6兆円</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>日本国会</h3>
+                    <p>〒100-0014 東京都千代田区永田町1-7-1</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 National Diet of Japan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
